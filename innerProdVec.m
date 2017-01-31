@@ -4,16 +4,17 @@
 function s=innerProdVec()
 count=10000;
 limit=100;
+N=1000;
 x=linspace(1,limit,count);
 y=linspace(1,limit,count);
 tic;
-for i=1:1000
+for i=1:N
     s=inner(x,y);
 end
 nvec = toc
 
 tic
-for i=1:1000
+for i=1:N
     s=vinner(x,y);
 end
 
