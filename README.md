@@ -1,2 +1,2 @@
 # matlab-optimization
-A repository to keep sample codes related to MATLAB optimization workshop. Eventually, the workshop material will move here.
+A repository to keep a set of sample code related to the MATLAB code optimization workshop. Most of the sample programs have MathWorks copyright. 
