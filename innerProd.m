@@ -1,4 +1,6 @@
 % A function to calculate inner product of two vectors using a loop
+% This is for illustration purpose. Please use the dot function instead
+% for a real world application.
 
 function s=innerProd()
 count=10000;
