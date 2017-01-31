@@ -41,10 +41,10 @@ fprintf('Elapsed time is %0.2f seconds.\n', t1);
 
 disp('Computing in parallel...');drawnow;
 
-%matlabpool open
+ncores = 4;
 p = gcp('nocreate');
 if(isempty(p))
-    p = parpool('local',4);
+    p = parpool('local',ncores);
 end
 
 tic;
@@ -60,7 +60,7 @@ end
 t2 = toc;
 fprintf('Elapsed time is %0.2f seconds.\n', t2);
 
-% Close MATLAB Pool
+% Close Parallel Pool
 delete(p);
 
 %% Visualize
