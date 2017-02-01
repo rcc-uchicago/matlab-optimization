@@ -1,0 +1,2 @@
+To run this code on Midway, you need to get a node on the gpu partition using
+sinteractive --ntasks=4 --nodes=1 --gres=gpu:1 -p gpu
